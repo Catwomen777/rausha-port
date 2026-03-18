@@ -22,8 +22,8 @@ export const projects: Project[] = [
     description:
       "A personal portfolio designed to present projects, technical growth, and professional goals in a polished developer-focused format.",
     frontendStack: ["Next.js", "TypeScript", "Tailwind CSS"],
-    githubUrl: "https://github.com/yourusername/portfolio-website",
-    liveDemoUrl: "https://your-demo-link.com/portfolio-website",
+    githubUrl: "https://github.com/Catwomen777/rausha-port/portfolio-website",
+    liveDemoUrl: "https://raushadev.com",
     status: "Live",
   },
   {
