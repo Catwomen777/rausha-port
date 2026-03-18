@@ -1,8 +1,13 @@
-export default function Projects() {
+import Navbar from "@/components/Navbar";
+import ProjectsSection from "@/components/ProjectsSection";
+import styles from "@/components/Portfolio.module.css";
+
+export default function ProjectsPage() {
   return (
-    <main className="min-h-screen p-10">
-      <h1 className="text-4xl font-bold mb-8">Projects</h1>
-      <p className="text-gray-600">This is the Projects page.</p>
+    <main className={styles.page}>
+      {/* Shared navbar keeps page navigation consistent across the portfolio. */}
+      <Navbar />
+      <ProjectsSection />
     </main>
   );
 }
