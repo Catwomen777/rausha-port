@@ -6,13 +6,13 @@ export default function Hero() {
     <section className={styles.hero}>
       <div className={`${styles.container} ${styles.heroLayout}`}>
         <div className={styles.heroCopy}>
-          <span className={styles.heroLabel}>AI Software Developer Portfolio</span>
+          <span className={styles.heroLabel}>AI Software Developer </span>
           <h1 className={styles.heroTitle}>
             Rausha
             <span className={styles.heroRole}>Innovative Software Developer</span>
           </h1>
           <p className={styles.heroText}>
-            I&apos;mI’m an innovative app developer and creative technologist 
+            I’m an innovative app developer and creative technologist 
             building digital experiences that blend art, modern web development, 
             and AI-driven ideas. My work focuses on creating original products that
             feel visually bold, technically strong, and built to solve real-world problems.

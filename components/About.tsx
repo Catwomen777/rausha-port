@@ -11,7 +11,7 @@ export default function About() {
 
         <div className={styles.aboutCard}>
           <p>
-            I&apos;m a junior developer transitioning into tech and actively building
+            I&apos;m a Software developer transitioning into tech and actively building
             projects that help me grow across both frontend and backend
             development. My goal is to create software that feels useful,
             thoughtful, and well structured.
@@ -20,7 +20,7 @@ export default function About() {
             I&apos;m especially interested in AI-powered applications, modern web
             development, and creative digital products. This portfolio is a place
             to document that progress and show the kind of work I want to keep
-            building as I apply for junior software engineer and AI-focused roles.
+            building as I apply for software engineer and AI-focused roles.
           </p>
         </div>
       </div>
