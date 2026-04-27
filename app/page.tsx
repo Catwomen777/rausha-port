@@ -1,5 +1,6 @@
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
+import ProjectsSection from "@/components/ProjectsSection";
 import styles from "@/components/Portfolio.module.css";
 
 export default function HomePage() {
@@ -8,8 +9,8 @@ export default function HomePage() {
       {/* Sticky navigation links to each section on the page. */}
       <Navbar />
 
-      {/* Home now stays focused on the hero section only. */}
       <Hero />
+      <ProjectsSection />
     </main>
   );
 }
