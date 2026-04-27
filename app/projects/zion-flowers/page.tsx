@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
-import { projects } from "@/lib/projects-data";
+import { projects } from "@/src/data/projects";
 
 const heroBadges = [
   "AI SaaS",
@@ -125,16 +125,12 @@ const challenges = [
   "Building with portfolio and demo readiness in mind so the product communicates execution quality quickly to recruiters and founders.",
 ];
 
-const zionFlowersProject = projects.find(
-  (project) => project.caseStudyUrl === "/projects/zion-flowers",
-);
-
-const liveDemoUrl = zionFlowersProject?.liveDemoUrl ?? "#";
-const githubUrl = zionFlowersProject?.githubUrl ?? "#";
-const imageUrl = zionFlowersProject?.imageUrl ?? "/images/zion-flowers-preview.jpg";
-const imageAlt =
-  zionFlowersProject?.imageAlt ??
-  "Preview artwork for the Zion Flowers AI marketplace platform.";
+const zionFlowersProject = projects.find((project) => project.slug === "zion-flowers");
+const projectTitle = zionFlowersProject?.title ?? "Zion Flowers";
+const liveDemoUrl = "https://zion-flowers-demo.vercel.app";
+const githubUrl = "https://github.com/yourusername/zion-flowers";
+const imageUrl = "/images/zion-flowers-preview.jpg";
+const imageAlt = "Preview artwork for the Zion Flowers AI marketplace platform.";
 
 export const metadata: Metadata = {
   title: "Zion Flowers Case Study | Rausha Portfolio",
@@ -193,7 +189,7 @@ export default function ZionFlowersCaseStudyPage() {
             </div>
 
             <h1 className="mt-8 max-w-4xl text-4xl font-semibold tracking-[-0.04em] text-white sm:text-5xl lg:text-6xl">
-              Zion Flowers — AI-Driven Flower Marketplace &amp; SaaS
+              {projectTitle}
             </h1>
 
             <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">

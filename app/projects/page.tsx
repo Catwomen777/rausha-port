@@ -1,13 +1,29 @@
 import Navbar from "@/components/Navbar";
-import ProjectsSection from "@/components/ProjectsSection";
 import styles from "@/components/Portfolio.module.css";
+import ProjectsGrid from "@/src/components/ProjectsGrid";
 
 export default function ProjectsPage() {
   return (
     <main className={styles.page}>
       {/* Shared navbar keeps page navigation consistent across the portfolio. */}
       <Navbar />
-      <ProjectsSection />
+      <section id="projects" className={styles.section}>
+        <div className={styles.container}>
+          <div className={styles.sectionHeader}>
+            <span className={styles.eyebrow}>Featured Work</span>
+            <h2 className={styles.sectionTitle}>
+              Product-focused builds with AI at the center.
+            </h2>
+            <p className={styles.sectionText}>
+              Zion Flowers leads the collection as a featured SaaS concept built
+              around AI-assisted commerce, marketplace operations, and polished
+              full-stack execution.
+            </p>
+          </div>
+
+          <ProjectsGrid />
+        </div>
+      </section>
     </main>
   );
 }

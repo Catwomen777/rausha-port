@@ -1,6 +1,5 @@
-import ProjectCard from "@/components/ProjectCard";
+import ProjectsGrid from "@/src/components/ProjectsGrid";
 import styles from "@/components/Portfolio.module.css";
-import { projects } from "@/lib/projects-data";
 
 export default function ProjectsSection() {
   return (
@@ -16,11 +15,7 @@ export default function ProjectsSection() {
           </p>
         </div>
 
-        <div className={styles.projectsGrid}>
-          {projects.map((project) => (
-            <ProjectCard key={project.title} project={project} />
-          ))}
-        </div>
+        <ProjectsGrid />
       </div>
     </section>
   );
